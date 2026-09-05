@@ -1,4 +1,4 @@
-// And Gate - System Verilog
+# And Gate - System Verilog
 
 module and_sv(
   input logic a,

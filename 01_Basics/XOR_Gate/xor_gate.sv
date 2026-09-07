@@ -1,3 +1,5 @@
+// XOR Gate - System Verilog
+
 module xor_gate(
   input logic a,
   input logic b,

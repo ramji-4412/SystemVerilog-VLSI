@@ -1,0 +1,80 @@
+[2026-09-09 11:59:03 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' design.sv testbench.sv  
+TOOL:	xrun	25.03-s001: Started on Sep 09, 2026 at 07:59:04 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		mux4to1_tb
+Loading snapshot worklib.mux4to1_tb:sv .................... Done
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+I0=0 | I1=0 | I2=0 | I3=0 | S=00 | Y=0
+I0=0 | I1=0 | I2=0 | I3=0 | S=01 | Y=0
+I0=0 | I1=0 | I2=0 | I3=0 | S=10 | Y=0
+I0=0 | I1=0 | I2=0 | I3=0 | S=11 | Y=0
+I0=0 | I1=0 | I2=0 | I3=1 | S=00 | Y=0
+I0=0 | I1=0 | I2=0 | I3=1 | S=01 | Y=0
+I0=0 | I1=0 | I2=0 | I3=1 | S=10 | Y=0
+I0=0 | I1=0 | I2=0 | I3=1 | S=11 | Y=1
+I0=0 | I1=0 | I2=1 | I3=0 | S=00 | Y=0
+I0=0 | I1=0 | I2=1 | I3=0 | S=01 | Y=0
+I0=0 | I1=0 | I2=1 | I3=0 | S=10 | Y=1
+I0=0 | I1=0 | I2=1 | I3=0 | S=11 | Y=0
+I0=0 | I1=0 | I2=1 | I3=1 | S=00 | Y=0
+I0=0 | I1=0 | I2=1 | I3=1 | S=01 | Y=0
+I0=0 | I1=0 | I2=1 | I3=1 | S=10 | Y=1
+I0=0 | I1=0 | I2=1 | I3=1 | S=11 | Y=1
+I0=0 | I1=1 | I2=0 | I3=0 | S=00 | Y=0
+I0=0 | I1=1 | I2=0 | I3=0 | S=01 | Y=1
+I0=0 | I1=1 | I2=0 | I3=0 | S=10 | Y=0
+I0=0 | I1=1 | I2=0 | I3=0 | S=11 | Y=0
+I0=0 | I1=1 | I2=0 | I3=1 | S=00 | Y=0
+I0=0 | I1=1 | I2=0 | I3=1 | S=01 | Y=1
+I0=0 | I1=1 | I2=0 | I3=1 | S=10 | Y=0
+I0=0 | I1=1 | I2=0 | I3=1 | S=11 | Y=1
+I0=0 | I1=1 | I2=1 | I3=0 | S=00 | Y=0
+I0=0 | I1=1 | I2=1 | I3=0 | S=01 | Y=1
+I0=0 | I1=1 | I2=1 | I3=0 | S=10 | Y=1
+I0=0 | I1=1 | I2=1 | I3=0 | S=11 | Y=0
+I0=0 | I1=1 | I2=1 | I3=1 | S=00 | Y=0
+I0=0 | I1=1 | I2=1 | I3=1 | S=01 | Y=1
+I0=0 | I1=1 | I2=1 | I3=1 | S=10 | Y=1
+I0=0 | I1=1 | I2=1 | I3=1 | S=11 | Y=1
+I0=1 | I1=0 | I2=0 | I3=0 | S=00 | Y=1
+I0=1 | I1=0 | I2=0 | I3=0 | S=01 | Y=0
+I0=1 | I1=0 | I2=0 | I3=0 | S=10 | Y=0
+I0=1 | I1=0 | I2=0 | I3=0 | S=11 | Y=0
+I0=1 | I1=0 | I2=0 | I3=1 | S=00 | Y=1
+I0=1 | I1=0 | I2=0 | I3=1 | S=01 | Y=0
+I0=1 | I1=0 | I2=0 | I3=1 | S=10 | Y=0
+I0=1 | I1=0 | I2=0 | I3=1 | S=11 | Y=1
+I0=1 | I1=0 | I2=1 | I3=0 | S=00 | Y=1
+I0=1 | I1=0 | I2=1 | I3=0 | S=01 | Y=0
+I0=1 | I1=0 | I2=1 | I3=0 | S=10 | Y=1
+I0=1 | I1=0 | I2=1 | I3=0 | S=11 | Y=0
+I0=1 | I1=0 | I2=1 | I3=1 | S=00 | Y=1
+I0=1 | I1=0 | I2=1 | I3=1 | S=01 | Y=0
+I0=1 | I1=0 | I2=1 | I3=1 | S=10 | Y=1
+I0=1 | I1=0 | I2=1 | I3=1 | S=11 | Y=1
+I0=1 | I1=1 | I2=0 | I3=0 | S=00 | Y=1
+I0=1 | I1=1 | I2=0 | I3=0 | S=01 | Y=1
+I0=1 | I1=1 | I2=0 | I3=0 | S=10 | Y=0
+I0=1 | I1=1 | I2=0 | I3=0 | S=11 | Y=0
+I0=1 | I1=1 | I2=0 | I3=1 | S=00 | Y=1
+I0=1 | I1=1 | I2=0 | I3=1 | S=01 | Y=1
+I0=1 | I1=1 | I2=0 | I3=1 | S=10 | Y=0
+I0=1 | I1=1 | I2=0 | I3=1 | S=11 | Y=1
+I0=1 | I1=1 | I2=1 | I3=0 | S=00 | Y=1
+I0=1 | I1=1 | I2=1 | I3=0 | S=01 | Y=1
+I0=1 | I1=1 | I2=1 | I3=0 | S=10 | Y=1
+I0=1 | I1=1 | I2=1 | I3=0 | S=11 | Y=0
+I0=1 | I1=1 | I2=1 | I3=1 | S=00 | Y=1
+I0=1 | I1=1 | I2=1 | I3=1 | S=01 | Y=1
+I0=1 | I1=1 | I2=1 | I3=1 | S=10 | Y=1
+I0=1 | I1=1 | I2=1 | I3=1 | S=11 | Y=1
+Simulation complete via $finish(1) at time 640 NS + 0
+./testbench.sv:27     $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Sep 09, 2026 at 07:59:05 EDT  (total: 00:00:01)
+Finding VCD file...
+./dump.vcd
+[2026-09-09 11:59:06 UTC] Opening EPWave...
+Done

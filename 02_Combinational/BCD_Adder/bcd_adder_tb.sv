@@ -33,3 +33,43 @@ module BCD_adder_tb;
     $finish;
   end
 endmodule
+
+
+// Testbench for Alternative Method
+
+module BCD_adder_tb;
+  logic [3:0]a;
+  logic [3:0]b;
+  logic cin;
+  logic [3:0]sum;
+  logic carry;
+  
+  BCD_adder dut(
+    .a(a),
+    .b(b),
+    .cin(cin),
+    .sum(sum),
+    .carry(carry)
+  );
+  
+  initial begin
+    
+    $dumpfile("dump.vcd");
+    $dumpvars(1,BCD_adder_tb);
+    
+    $monitor("a=%d | b=%d | cin=%d | sum=%d | carry=%d",a,b,cin,sum,carry);
+    
+    cin = 0;
+    
+    for(int i=0;i<10;i++)begin
+      a=i;
+      for(int j=0;j<10;j++)begin
+        b=j;
+      	#10;
+      end
+      #10;
+    end
+    
+    $finish;
+  end
+endmodule

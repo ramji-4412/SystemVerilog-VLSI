@@ -31,3 +31,32 @@ module BCD_adder(
     
   end
 endmodule
+
+// Altnerantive Method
+
+module BCD_adder(
+  input logic [3:0]a,
+  input logic [3:0]b,
+  input logic cin,
+  output logic [3:0]sum,
+  output logic carry
+);
+  
+  logic [4:0] binary_sum;
+  logic [4:0] corrected_sum;
+  
+  always_comb begin
+    
+    binary_sum = a+b+cin;
+    
+    if(binary_sum > 5'd9)
+      corrected_sum = binary_sum + 5'd6;
+    
+    else
+      corrected_sum = binary_sum;
+    
+    sum = corrected_sum[3:0];
+    carry = corrected_sum[4];
+    
+  end
+endmodule

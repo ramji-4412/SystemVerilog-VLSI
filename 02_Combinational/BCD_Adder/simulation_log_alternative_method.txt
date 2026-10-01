@@ -1,0 +1,116 @@
+[2026-10-01 06:55:22 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' design.sv testbench.sv  
+TOOL:	xrun	25.03-s001: Started on Oct 01, 2026 at 02:55:22 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		BCD_adder_tb
+Loading snapshot worklib.BCD_adder_tb:sv .................... Done
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+a= 0 | b= 0 | cin=0 | sum= 0 | carry=0
+a= 0 | b= 1 | cin=0 | sum= 1 | carry=0
+a= 0 | b= 2 | cin=0 | sum= 2 | carry=0
+a= 0 | b= 3 | cin=0 | sum= 3 | carry=0
+a= 0 | b= 4 | cin=0 | sum= 4 | carry=0
+a= 0 | b= 5 | cin=0 | sum= 5 | carry=0
+a= 0 | b= 6 | cin=0 | sum= 6 | carry=0
+a= 0 | b= 7 | cin=0 | sum= 7 | carry=0
+a= 0 | b= 8 | cin=0 | sum= 8 | carry=0
+a= 0 | b= 9 | cin=0 | sum= 9 | carry=0
+a= 1 | b= 0 | cin=0 | sum= 1 | carry=0
+a= 1 | b= 1 | cin=0 | sum= 2 | carry=0
+a= 1 | b= 2 | cin=0 | sum= 3 | carry=0
+a= 1 | b= 3 | cin=0 | sum= 4 | carry=0
+a= 1 | b= 4 | cin=0 | sum= 5 | carry=0
+a= 1 | b= 5 | cin=0 | sum= 6 | carry=0
+a= 1 | b= 6 | cin=0 | sum= 7 | carry=0
+a= 1 | b= 7 | cin=0 | sum= 8 | carry=0
+a= 1 | b= 8 | cin=0 | sum= 9 | carry=0
+a= 1 | b= 9 | cin=0 | sum= 0 | carry=1
+a= 2 | b= 0 | cin=0 | sum= 2 | carry=0
+a= 2 | b= 1 | cin=0 | sum= 3 | carry=0
+a= 2 | b= 2 | cin=0 | sum= 4 | carry=0
+a= 2 | b= 3 | cin=0 | sum= 5 | carry=0
+a= 2 | b= 4 | cin=0 | sum= 6 | carry=0
+a= 2 | b= 5 | cin=0 | sum= 7 | carry=0
+a= 2 | b= 6 | cin=0 | sum= 8 | carry=0
+a= 2 | b= 7 | cin=0 | sum= 9 | carry=0
+a= 2 | b= 8 | cin=0 | sum= 0 | carry=1
+a= 2 | b= 9 | cin=0 | sum= 1 | carry=1
+a= 3 | b= 0 | cin=0 | sum= 3 | carry=0
+a= 3 | b= 1 | cin=0 | sum= 4 | carry=0
+a= 3 | b= 2 | cin=0 | sum= 5 | carry=0
+a= 3 | b= 3 | cin=0 | sum= 6 | carry=0
+a= 3 | b= 4 | cin=0 | sum= 7 | carry=0
+a= 3 | b= 5 | cin=0 | sum= 8 | carry=0
+a= 3 | b= 6 | cin=0 | sum= 9 | carry=0
+a= 3 | b= 7 | cin=0 | sum= 0 | carry=1
+a= 3 | b= 8 | cin=0 | sum= 1 | carry=1
+a= 3 | b= 9 | cin=0 | sum= 2 | carry=1
+a= 4 | b= 0 | cin=0 | sum= 4 | carry=0
+a= 4 | b= 1 | cin=0 | sum= 5 | carry=0
+a= 4 | b= 2 | cin=0 | sum= 6 | carry=0
+a= 4 | b= 3 | cin=0 | sum= 7 | carry=0
+a= 4 | b= 4 | cin=0 | sum= 8 | carry=0
+a= 4 | b= 5 | cin=0 | sum= 9 | carry=0
+a= 4 | b= 6 | cin=0 | sum= 0 | carry=1
+a= 4 | b= 7 | cin=0 | sum= 1 | carry=1
+a= 4 | b= 8 | cin=0 | sum= 2 | carry=1
+a= 4 | b= 9 | cin=0 | sum= 3 | carry=1
+a= 5 | b= 0 | cin=0 | sum= 5 | carry=0
+a= 5 | b= 1 | cin=0 | sum= 6 | carry=0
+a= 5 | b= 2 | cin=0 | sum= 7 | carry=0
+a= 5 | b= 3 | cin=0 | sum= 8 | carry=0
+a= 5 | b= 4 | cin=0 | sum= 9 | carry=0
+a= 5 | b= 5 | cin=0 | sum= 0 | carry=1
+a= 5 | b= 6 | cin=0 | sum= 1 | carry=1
+a= 5 | b= 7 | cin=0 | sum= 2 | carry=1
+a= 5 | b= 8 | cin=0 | sum= 3 | carry=1
+a= 5 | b= 9 | cin=0 | sum= 4 | carry=1
+a= 6 | b= 0 | cin=0 | sum= 6 | carry=0
+a= 6 | b= 1 | cin=0 | sum= 7 | carry=0
+a= 6 | b= 2 | cin=0 | sum= 8 | carry=0
+a= 6 | b= 3 | cin=0 | sum= 9 | carry=0
+a= 6 | b= 4 | cin=0 | sum= 0 | carry=1
+a= 6 | b= 5 | cin=0 | sum= 1 | carry=1
+a= 6 | b= 6 | cin=0 | sum= 2 | carry=1
+a= 6 | b= 7 | cin=0 | sum= 3 | carry=1
+a= 6 | b= 8 | cin=0 | sum= 4 | carry=1
+a= 6 | b= 9 | cin=0 | sum= 5 | carry=1
+a= 7 | b= 0 | cin=0 | sum= 7 | carry=0
+a= 7 | b= 1 | cin=0 | sum= 8 | carry=0
+a= 7 | b= 2 | cin=0 | sum= 9 | carry=0
+a= 7 | b= 3 | cin=0 | sum= 0 | carry=1
+a= 7 | b= 4 | cin=0 | sum= 1 | carry=1
+a= 7 | b= 5 | cin=0 | sum= 2 | carry=1
+a= 7 | b= 6 | cin=0 | sum= 3 | carry=1
+a= 7 | b= 7 | cin=0 | sum= 4 | carry=1
+a= 7 | b= 8 | cin=0 | sum= 5 | carry=1
+a= 7 | b= 9 | cin=0 | sum= 6 | carry=1
+a= 8 | b= 0 | cin=0 | sum= 8 | carry=0
+a= 8 | b= 1 | cin=0 | sum= 9 | carry=0
+a= 8 | b= 2 | cin=0 | sum= 0 | carry=1
+a= 8 | b= 3 | cin=0 | sum= 1 | carry=1
+a= 8 | b= 4 | cin=0 | sum= 2 | carry=1
+a= 8 | b= 5 | cin=0 | sum= 3 | carry=1
+a= 8 | b= 6 | cin=0 | sum= 4 | carry=1
+a= 8 | b= 7 | cin=0 | sum= 5 | carry=1
+a= 8 | b= 8 | cin=0 | sum= 6 | carry=1
+a= 8 | b= 9 | cin=0 | sum= 7 | carry=1
+a= 9 | b= 0 | cin=0 | sum= 9 | carry=0
+a= 9 | b= 1 | cin=0 | sum= 0 | carry=1
+a= 9 | b= 2 | cin=0 | sum= 1 | carry=1
+a= 9 | b= 3 | cin=0 | sum= 2 | carry=1
+a= 9 | b= 4 | cin=0 | sum= 3 | carry=1
+a= 9 | b= 5 | cin=0 | sum= 4 | carry=1
+a= 9 | b= 6 | cin=0 | sum= 5 | carry=1
+a= 9 | b= 7 | cin=0 | sum= 6 | carry=1
+a= 9 | b= 8 | cin=0 | sum= 7 | carry=1
+a= 9 | b= 9 | cin=0 | sum= 8 | carry=1
+Simulation complete via $finish(1) at time 1100 NS + 0
+./testbench.sv:34     $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Oct 01, 2026 at 02:55:24 EDT  (total: 00:00:02)
+Finding VCD file...
+./dump.vcd
+[2026-10-01 06:55:24 UTC] Opening EPWave...
+Done

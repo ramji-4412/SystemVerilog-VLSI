@@ -56,3 +56,63 @@ module BCD_2digit_adder_tb;
     $finish;
   end
 endmodule
+
+
+// Testbench for Alternative Method
+
+module BCD_2digit_adder_tb;
+  
+  logic [7:0]a;
+  logic [7:0]b;
+  logic cin;
+  logic [7:0]sum;
+  logic carry;
+  
+  BCD_2digit_adder dut(
+    .a(a),
+    .b(b),
+    .cin(cin),
+    .sum(sum),
+    .carry(carry)
+  );
+  
+  initial begin
+    
+    $dumpfile("dump.vcd");
+    $dumpvars(1,BCD_2digit_adder_tb);
+    
+    $monitor("a=%h | b=%h | cin=%h | carry=%h | sum=%h",a,b,cin,carry,sum);
+    
+        a = 8'h90;
+        b = 8'h80;
+        cin = 0;
+        #10;
+
+        a = 8'h12;
+        b = 8'h14;
+        cin = 0;
+        #10;
+
+        a = 8'h10;
+        b = 8'h15;
+        cin = 0;
+        #10;
+
+        a = 8'h60;
+        b = 8'h00;
+        cin = 0;
+        #10;
+
+        a = 8'h75;
+        b = 8'h25;
+        cin = 0;
+        #10;
+
+        a = 8'h74;
+        b = 8'h75;
+        cin = 1;
+        #10;
+   
+    $finish;
+  end
+endmodule

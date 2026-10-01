@@ -68,3 +68,65 @@ module BCD_2digit_adder(
   assign carry = tens_carry;
   
 endmodule
+
+
+// Alternative Method
+
+module BCD_adder(
+  input logic [3:0]a,
+  input logic [3:0]b,
+  input logic cin,
+  output logic [3:0]sum,
+  output logic carry
+);
+  
+  logic [4:0] binary_sum;
+  logic [4:0] corrected_sum;
+  
+  always_comb begin
+    
+    binary_sum = a+b+cin;
+    
+    if(binary_sum>5'd9) begin
+      corrected_sum = binary_sum + 5'd6;
+    end
+    
+    else begin
+      corrected_sum = binary_sum;
+  	end
+    
+    sum = corrected_sum[3:0];
+    carry = corrected_sum[4];
+    
+  end
+endmodule
+
+
+
+module BCD_2digit_adder(
+  input logic [7:0]a,
+  input logic [7:0]b,
+  input logic cin,
+  output logic [7:0]sum,
+  output logic carry
+);
+  
+  logic carry_units;
+  
+  BCD_adder A0(
+    .a(a[3:0]),
+    .b(b[3:0]),
+    .cin(cin),
+    .sum(sum[3:0]),
+    .carry(carry_units)
+  );
+  
+  BCD_adder A1(
+    .a(a[7:4]),
+    .b(b[7:4]),
+    .cin(carry_units),
+    .sum(sum[7:4]),
+    .carry(carry)
+  );
+  
+endmodule

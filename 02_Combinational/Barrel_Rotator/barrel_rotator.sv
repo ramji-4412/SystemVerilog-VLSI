@@ -1,4 +1,4 @@
-// 8-Bit Barrel Rotator
+// 8-Bit Barrel Rotator - System Verilog
 
 module barrel_rotator (
     input  logic [7:0] a,

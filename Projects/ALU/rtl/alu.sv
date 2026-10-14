@@ -104,13 +104,23 @@ module ALU #(
       
       // COMPARE
       4'b1100: begin
-        if(A>B) 
-          Y[0] = 1;
-        else if(A==B) 
-          Y[1] = 1;
-        else 
-          Y[2] = 1;
-      end
+  		if (N == 2) begin
+    		if (A > B)
+     			Y = 2'b10;
+    		else if (A == B)
+      			Y = 2'b01;
+    		else
+      			Y = 2'b00;
+  		end
+  		else begin
+    		if (A > B)
+      			Y[0] = 1'b1;
+    		else if (A == B)
+      			Y[1] = 1'b1;
+    		else
+      			Y[2] = 1'b1;
+  		end
+		end
        
       // INCREMENT
       4'b1101: begin
